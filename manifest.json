@@ -1,0 +1,16 @@
+{
+  "name": "Member Deals",
+  "short_name": "Member Deals",
+  "description": "Daily Plus/Total member-exclusive Best Buy deals for the floor.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#003b64",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

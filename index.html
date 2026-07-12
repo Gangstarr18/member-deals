@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Member Deals</title>
+
+<!-- Makes iOS treat this as an installable, full-screen app -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Member Deals">
+<meta name="theme-color" content="#003b64">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon.png">
+
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f5f7fa; color: #1a1a2e;
+    padding: env(safe-area-inset-top) 14px calc(env(safe-area-inset-bottom) + 20px);
+  }
+  header {
+    position: sticky; top: 0; z-index: 5;
+    background: #f5f7fa; padding: 14px 0 8px;
+    display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  }
+  h1 { font-size: 1.1rem; color: #003b64; line-height: 1.2; }
+  .reload {
+    border: 1px solid #0046be; background: #0046be; color: #fff;
+    border-radius: 20px; padding: 7px 15px; font-size: 0.85rem; font-weight: 600;
+    cursor: pointer;
+  }
+  .reload:active { background: #003790; }
+  .updated { font-size: 0.78rem; color: #667; margin-bottom: 12px; }
+  .pitchbar {
+    background: #003b64; color: #fff; border-radius: 12px;
+    padding: 12px 14px; font-size: 0.86rem; margin-bottom: 16px; line-height: 1.45;
+  }
+  .pitchbar b { color: #ffe000; }
+  .tabs {
+    display: flex; gap: 6px; margin-bottom: 14px;
+    overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px;
+  }
+  .tab {
+    flex: 0 0 auto; border: 1px solid #c9d4e0; background: #fff;
+    border-radius: 20px; padding: 7px 14px; font-size: 0.85rem; color: #003b64; cursor: pointer;
+  }
+  .tab.active { background: #0046be; color: #fff; border-color: #0046be; }
+  .dept { margin-bottom: 22px; }
+  .dept h2 {
+    font-size: 1rem; color: #003b64; margin-bottom: 10px;
+    border-bottom: 2px solid #ffe000; display: inline-block; padding-bottom: 2px;
+  }
+  .cards { display: grid; grid-template-columns: 1fr; gap: 10px; }
+  @media (min-width: 620px) { .cards { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); } }
+  .card {
+    background: #fff; border: 1px solid #e1e7ef; border-radius: 12px;
+    padding: 12px 14px; display: flex; flex-direction: column; gap: 6px;
+  }
+  .card .name { font-size: 0.92rem; font-weight: 600; line-height: 1.3; }
+  .prices { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .member { font-size: 1.3rem; font-weight: 700; color: #0046be; }
+  .was { font-size: 0.85rem; color: #99a; text-decoration: line-through; }
+  .save { background: #e7f4e9; color: #15703b; font-size: 0.78rem; font-weight: 700; border-radius: 12px; padding: 2px 9px; }
+  .save.big { background: #15703b; color: #fff; }
+  .sku { font-size: 0.78rem; color: #778; }
+  .warn {
+    background: #fff; border: 1px dashed #d9a300; border-radius: 12px;
+    padding: 10px 14px; font-size: 0.82rem; color: #7a5c00; margin-top: 10px;
+  }
+  .warn b { color: #6b5000; }
+  .msg { text-align: center; color: #778; padding: 40px 20px; font-size: 0.9rem; line-height: 1.5; }
+  footer { font-size: 0.72rem; color: #99a; margin-top: 18px; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Member Deals</h1>
+  <button class="reload" id="reload">↻ Reload</button>
+</header>
+<div class="updated" id="updated"></div>
+<div class="pitchbar" id="pitchbar" style="display:none"></div>
+<div class="tabs" id="tabs"></div>
+<div id="content"><div class="msg">Loading today's deals…</div></div>
+<footer>Plus/Total member-exclusive prices, verified on bestbuy.com.</footer>
+
+<script>
+const fmt = n => '$' + Number(n).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+let DATA = null;
+let active = localStorage.getItem('mdd-tab') || 'All';
+
+async function load() {
+  document.getElementById('content').innerHTML = '<div class="msg">Loading today’s deals…</div>';
+  try {
+    // cache-bust so a fresh deals.json shows up right after you commit it
+    const res = await fetch('deals.json?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    DATA = await res.json();
+    render();
+  } catch (e) {
+    document.getElementById('content').innerHTML =
+      '<div class="msg">Couldn’t load deals.json.<br>Make sure it’s in the same folder as this app, then tap Reload.</div>';
+  }
+}
+
+function render() {
+  if (!DATA) return;
+  document.getElementById('updated').textContent = 'Updated: ' + (DATA.updated || '');
+  const pb = document.getElementById('pitchbar');
+  if (DATA.headline || DATA.objection) {
+    pb.style.display = 'block';
+    pb.innerHTML =
+      (DATA.headline ? '<b>Deal of the day:</b> ' + DATA.headline : '') +
+      (DATA.objection ? '<br><b>Objection handler:</b> ' + DATA.objection : '');
+  }
+  const tabsEl = document.getElementById('tabs');
+  const contentEl = document.getElementById('content');
+  const names = (DATA.departments || []).map(d => d.name);
+  if (!names.includes(active)) active = 'All';
+
+  tabsEl.innerHTML = '';
+  ['All', ...names].forEach(name => {
+    const b = document.createElement('button');
+    b.className = 'tab' + (name === active ? ' active' : '');
+    b.textContent = name;
+    b.onclick = () => { active = name; localStorage.setItem('mdd-tab', name); render(); };
+    tabsEl.appendChild(b);
+  });
+
+  contentEl.innerHTML = '';
+  (DATA.departments || []).filter(d => active === 'All' || d.name === active).forEach(d => {
+    const sec = document.createElement('div'); sec.className = 'dept';
+    sec.innerHTML = '<h2>' + d.name + '</h2>';
+    const cards = document.createElement('div'); cards.className = 'cards';
+    [...(d.deals || [])].sort((a, b) => b.save - a.save).forEach(deal => {
+      const c = document.createElement('div'); c.className = 'card';
+      const pct = Math.round(deal.save / deal.regular * 100);
+      c.innerHTML =
+        '<div class="name">' + deal.product + '</div>' +
+        '<div class="prices"><span class="member">' + fmt(deal.member) + '</span>' +
+        '<span class="was">' + fmt(deal.regular) + '</span>' +
+        '<span class="save' + (deal.save >= 100 ? ' big' : '') + '">members save $' + deal.save + ' (' + pct + '%)</span></div>' +
+        (deal.sku ? '<div class="sku">SKU: ' + deal.sku + '</div>' : '');
+      cards.appendChild(c);
+    });
+    sec.appendChild(cards);
+    if (d.notDeals) {
+      const w = document.createElement('div'); w.className = 'warn';
+      w.innerHTML = '<b>⚠️ Lookalike regular sales:</b> ' + d.notDeals;
+      sec.appendChild(w);
+    }
+    contentEl.appendChild(sec);
+  });
+}
+
+document.getElementById('reload').onclick = load;
+load();
+</script>
+</body>
+</html>

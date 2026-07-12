@@ -1,0 +1,48 @@
+{
+  "updated": "Saturday, July 11, 2026 (morning refresh)",
+  "headline": "Samsung 85\" M80H Mini LED (2026) — members save $180 (11% off), SKU 6671597. Biggest single member discount in the store today and the easiest big-ticket membership close.",
+  "objection": "If they hesitate on membership: “You're already investing $1,600 in the 85-inch — the membership gives you $180 of it back today and keeps saving you money all year.”",
+  "departments": [
+    {
+      "name": "TV & Home Theater",
+      "deals": [
+        { "product": "Samsung 85\" M80H Mini LED (2026)", "regular": 1599.99, "member": 1419.99, "save": 180, "sku": "6671597" },
+        { "product": "LG 48\" C6 OLED evo (2026)", "regular": 1399.99, "member": 1299.99, "save": 100, "sku": "6673113" },
+        { "product": "Samsung 75\" M80H Mini LED (2026)", "regular": 999.99, "member": 899.99, "save": 100, "sku": "6671596" },
+        { "product": "Hisense 85\" UR8 RGB MiniLED (2026)", "regular": 2499.99, "member": 2469.99, "save": 30, "sku": "6673610" },
+        { "product": "Hisense 100\" U6 MiniLED (2026)", "regular": 1999.99, "member": 1969.99, "save": 30, "sku": "6673653" },
+        { "product": "Hisense 116\" UX RGB MiniLED (2025)", "regular": 18999.99, "member": 18969.99, "save": 30, "sku": "6633208" },
+        { "product": "Hisense 85\" U6 MiniLED (2026)", "regular": 999.99, "member": 969.99, "save": 30, "sku": "6673649" },
+        { "product": "Hisense 75\" U6 MiniLED (2026)", "regular": 749.99, "member": 719.99, "save": 30, "sku": "6673650" },
+        { "product": "Hisense 65\" U6 MiniLED (2026)", "regular": 599.99, "member": 569.99, "save": 30, "sku": "6673654" },
+        { "product": "Hisense 55\" U6 MiniLED (2026)", "regular": 449.99, "member": 419.99, "save": 30, "sku": "6673651" },
+        { "product": "Hisense 50\" U6 MiniLED (2026)", "regular": 449.99, "member": 419.99, "save": 30, "sku": "6673652" },
+        { "product": "Samsung 65\" U7900 UHD (2025)", "regular": 329.99, "member": 298.99, "save": 31, "sku": "6639210" },
+        { "product": "Roku Streambar SE", "regular": 99.99, "member": 89.99, "save": 10, "sku": "6577048" }
+      ],
+      "notDeals": "TCL 65\" QM6K ($999.99) and LG 32\" LR65 ($179.99) are regular sales open to everyone, NOT member-exclusive."
+    },
+    {
+      "name": "Computers & Gaming",
+      "deals": [
+        { "product": "Samsung 990 PRO 4TB SSD (+free $100 e-gift card)", "regular": 1099.99, "member": 965.99, "save": 134, "sku": "6559270" },
+        { "product": "Corsair VENGEANCE LPX 32GB DDR4", "regular": 296.99, "member": 214.99, "save": 82, "sku": "6448611" },
+        { "product": "Apple Magic Keyboard for iPad Air 11\" (M4)", "regular": 269.00, "member": 242.00, "save": 27, "sku": "6589023" },
+        { "product": "Apple Magic Keyboard Folio (iPad A16)", "regular": 249.00, "member": 224.00, "save": 25, "sku": "6340391" },
+        { "product": "Apple 11\" iPad (A16) 128GB", "regular": 449.00, "member": 427.00, "save": 22, "sku": "6578268" },
+        { "product": "Apple Magic Mouse (USB-C)", "regular": 79.99, "member": 69.99, "save": 10, "sku": "6276703" },
+        { "product": "Logitech MX Creative Console", "regular": 199.99, "member": 189.99, "save": 10, "sku": "6593421" },
+        { "product": "Logitech C920s Pro Webcam", "regular": 69.99, "member": 66.99, "save": 3, "sku": "6321794" }
+      ],
+      "notDeals": "Logitech z150 speakers ($34.99) and the “Top Deal” Logitech MK-series keyboard/mouse combos are regular sales, not member-exclusive. Sony DualSense (Chroma Pearl, SKU 6601464) shows a $10 member save but its member price only displays in the app."
+    },
+    {
+      "name": "Audio & Cameras",
+      "deals": [
+        { "product": "Samsung HW-LS60D Music Frame (Dolby Atmos)", "regular": 349.99, "member": 297.99, "save": 52, "sku": "6577560" },
+        { "product": "Logitech Wireless Bluetooth Speaker Adapter", "regular": 39.99, "member": 37.99, "save": 2, "sku": "5294033" }
+      ],
+      "notDeals": "RØDE Wireless GO (Gen 3) ($153.99, “Save $46” comp value) is a regular sale, not member-exclusive. NOTE: Appliances, Smart Home, Cell Phones, Cameras/Drones and Health/Wearables member pricing could not be verified this run — bestbuy.com blocked product-page loads mid-run after heavy traffic. Check member prices in the app."
+    }
+  ]
+}
