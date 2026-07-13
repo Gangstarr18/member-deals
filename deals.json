@@ -1,7 +1,7 @@
 {
   "updated": "Sunday, July 12, 2026 (morning refresh)",
   "headline": "Samsung 85\" M80H Mini LED (2026) — members save $180 (11% off), SKU 6671597. Biggest single member discount confirmed in the store today and the easiest big-ticket membership close.",
-  "objection": "If they hesitate on membership: “Plus is $49.99 for the year — on this 85-inch alone you save $180 today, so the membership pays for itself before it even leaves the store.”",
+  "objection": "If they hesitate on membership: “Plus is $29.99 for the year — on this 85-inch alone you save $180 today, so the membership pays for itself many times over before it even leaves the store.”",
   "departments": [
     {
       "name": "TV & Home Theater",
@@ -41,5 +41,27 @@
       ],
       "notDeals": "Samsung 30-in. electric range ($799.99) and Samsung over-the-range microwave ($379.99) are regular sales, not member-exclusive. NOTE: Audio & Headphones, Cameras/Drones, Cell Phones, and Health/Wearables could not be verified this run — bestbuy.com blocked product-page loads mid-run after heavy traffic, and member prices don't show on the listing pages. Smart Home was only partially covered (routers/mesh beyond the Nighthawk still need checking in the app)."
     }
-  ]
+  ],
+  "financing": {
+    "note": "All offers below are DEFERRED interest — pitch it as “no interest IF paid in full by the end of the term,” never “no interest” flat (compliance). Interest backdates to the purchase date if it isn't paid off in time. All require the My Best Buy Credit Card, so financing doubles as a card-application driver.",
+    "byCategory": [
+      { "offer": "Appliances & grills", "term": "18 months", "threshold": "$599+", "expires": "" },
+      { "offer": "Home theater", "term": "24 months", "threshold": "$999+", "expires": "" },
+      { "offer": "Unlocked phones", "term": "24 months", "threshold": "$649+", "expires": "" },
+      { "offer": "Microsoft Surface laptop / Surface Pro", "term": "24 months", "threshold": "$1,499.99+", "expires": "🚩 ENDS TODAY 7/12" }
+    ],
+    "thresholdLadder": [
+      { "spend": "$299+", "term": "12 months", "scope": "storewide, any department" },
+      { "spend": "$599+", "term": "18 months", "scope": "appliances / grills" },
+      { "spend": "$649+", "term": "24 months", "scope": "phones" },
+      { "spend": "$999+", "term": "24 months", "scope": "home theater" },
+      { "spend": "$1,499.99+", "term": "24 months", "scope": "Surface, today only" }
+    ],
+    "cardOffers": [
+      "5% back in rewards on Best Buy purchases (10% back first 14 days on approval, or take financing instead)",
+      "6% back for Plus/Total members using the card",
+      "🚩 2x rewards on RGB TVs, TCL X11L Mini LED TVs, and select NETGEAR mesh Wi-Fi — ends 7/26"
+    ],
+    "pitch": "Pair financing with big-ticket demos — lead with the monthly payment on major appliances, TVs, and laptops. Turn every big demo into a card app."
+  }
 }
