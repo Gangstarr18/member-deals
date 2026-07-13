@@ -102,6 +102,7 @@
 <div class="updated" id="updated"></div>
 <div class="pitchbar" id="pitchbar" style="display:none"></div>
 <div id="financing"></div>
+<div id="memberperks"></div>
 <div class="tabs" id="tabs"></div>
 <div id="content"><div class="msg">Loading today's deals…</div></div>
 <footer>Plus/Total member-exclusive prices, verified on bestbuy.com.</footer>
@@ -164,6 +165,26 @@ function render() {
   } else {
     finEl.innerHTML = '';
     finEl.style.display = 'none';
+  }
+
+  // Member perks panel (Plus & Total limited-time promos, store-wide)
+  const mpEl = document.getElementById('memberperks');
+  const mp = DATA.memberPerks;
+  if (mp) {
+    let mh = '<div class="finance"><h2>⭐ My Best Buy Plus &amp; Total — Member Perks</h2>';
+    if (mp.note) mh += '<div class="fnote">' + mp.note + '</div>';
+    if (mp.limitedTime && mp.limitedTime.length) {
+      mh += '<h3>Limited-time member promos</h3><ul>';
+      mp.limitedTime.forEach(o => { mh += '<li>' + o + '</li>'; });
+      mh += '</ul>';
+    }
+    if (mp.pitch) mh += '<div class="fpitch">⭐ ' + mp.pitch + '</div>';
+    mh += '</div>';
+    mpEl.innerHTML = mh;
+    mpEl.style.display = 'block';
+  } else {
+    mpEl.innerHTML = '';
+    mpEl.style.display = 'none';
   }
 
   const tabsEl = document.getElementById('tabs');

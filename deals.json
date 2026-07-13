@@ -1,67 +1,118 @@
 {
-  "updated": "Sunday, July 12, 2026 (morning refresh)",
+  "updated": "Monday, July 13, 2026 (manual midday refresh)",
   "headline": "Samsung 85\" M80H Mini LED (2026) — members save $180 (11% off), SKU 6671597. Biggest single member discount confirmed in the store today and the easiest big-ticket membership close.",
   "objection": "If they hesitate on membership: “Plus is $29.99 for the year — on this 85-inch alone you save $180 today, so the membership pays for itself many times over before it even leaves the store.”",
   "departments": [
     {
       "name": "TV & Home Theater",
       "deals": [
+        { "product": "Hisense 85\" UR8 RGB MiniLED (2026)", "regular": 2499.99, "member": 2469.99, "save": 30, "sku": "6673610" },
         { "product": "Samsung 85\" M80H Mini LED (2026)", "regular": 1599.99, "member": 1419.99, "save": 180, "sku": "6671597" },
+        { "product": "Hisense 75\" UR8 RGB MiniLED (2026)", "regular": 1699.99, "member": 1669.99, "save": 30, "sku": "6673612" },
         { "product": "LG 77\" B5 OLED (2025)", "regular": 1499.99, "member": 1399.99, "save": 100, "sku": "6621813" },
-        { "product": "LG 48\" C6 OLED evo (2026)", "regular": 1399.99, "member": 1299.99, "save": 100, "sku": "6673113" },
-        { "product": "Samsung 75\" M80H Mini LED (2026)", "regular": 999.99, "member": 899.99, "save": 100, "sku": "6671596" },
-        { "product": "Hisense 65\" U6 MiniLED QLED (2026) ⏰ expiring", "regular": 599.99, "member": 569.99, "save": 30, "sku": "6673654" },
-        { "product": "Samsung 65\" U7900 UHD (2025)", "regular": 329.99, "member": 298.99, "save": 31, "sku": "6639210" },
         { "product": "Samsung HW-LS60D Music Frame (Dolby Atmos)", "regular": 349.99, "member": 297.99, "save": 52, "sku": "6577560" },
-        { "product": "Roku Streambar SE", "regular": 99.99, "member": 89.99, "save": 10, "sku": "6577048" }
+        { "product": "JBL 2.0 All-in-One Soundbar (MK2)", "regular": 149.99, "member": 139.99, "save": 10, "sku": "6532964" }
       ],
-      "notDeals": "TCL 65\" QM6K ($999.99) and LG 32\" LR65 ($179.99) are regular sales open to everyone, NOT member-exclusive. Hisense 65\" U6 shows a deal countdown (~15 hrs) and may rotate out by midday."
+      "notDeals": "TCL 65\" QM6K ($999.99), LG 32\" LR65 ($179.99), and the Samsung Q990H soundbar ($1,699.99, $300 off) are regular sales open to everyone, NOT member-exclusive."
     },
     {
       "name": "Computers & Gaming",
       "deals": [
-        { "product": "Corsair VENGEANCE LPX 32GB DDR4", "regular": 296.99, "member": 214.99, "save": 82, "sku": "6448611" },
+        { "product": "Corsair Vengeance LPX 32GB DDR4", "regular": 239.99, "member": 214.99, "save": 25, "sku": "6448611" },
         { "product": "Meta Quest Elite Strap w/ Battery (Quest 3/3S)", "regular": 129.99, "member": 99.99, "save": 30, "sku": "6570194" },
-        { "product": "Turtle Beach Stealth 700 Gen 3 Headset", "regular": 149.99, "member": 135.99, "save": 14, "sku": "6583956" },
-        { "product": "Sony DualSense Wireless Controller", "regular": 79.99, "member": 69.99, "save": 10, "sku": "6601464" },
-        { "product": "Logitech MK540 Wireless Keyboard + Mouse Combo ⏰ expiring", "regular": 39.99, "member": 37.99, "save": 2, "sku": "6215118" },
+        { "product": "Turtle Beach Stealth 700 Gen 3 Headset", "regular": 149.99, "member": 131.99, "save": 18, "sku": "6583956" },
+        { "product": "Microsoft Xbox Wireless Controller", "regular": 69.99, "member": 54.99, "save": 15, "sku": "6503118" },
         { "product": "Logitech M720 Triathlon Mouse", "regular": 34.99, "member": 33.99, "save": 1, "sku": "5592421" },
-        { "product": "Logitech MK270 Wireless Keyboard + Mouse ⏰ expiring", "regular": 19.99, "member": 18.99, "save": 1, "sku": "1440638" }
+        { "product": "Logitech MK270 Wireless Keyboard + Mouse", "regular": 23.99, "member": 22.99, "save": 1, "sku": "1440638" }
       ],
-      "notDeals": "WD_BLACK SN850P SSD ($219.99), Logitech G733 headset ($129.99), SanDisk 256GB Switch card ($89.99), Logitech M310 mouse and the TCL 65\" QM6K are regular sales, not member-exclusive. The MK540/MK270 tile 'Save $20/$10' is a regular Top Deal — the member portion is only $1-$2."
+      "notDeals": "WD_BLACK SN850P SSD ($219.99), Logitech G733 headset ($119.99), SanDisk 256GB Switch card ($89.99), and Logitech M310 mouse are regular sales, not member-exclusive."
     },
     {
-      "name": "Appliances & Smart Home",
+      "name": "Appliances",
       "deals": [
         { "product": "GE Profile 7.8 Cu. Ft. Smart Electric Dryer", "regular": 1049.99, "member": 999.99, "save": 50, "sku": "6570087" },
-        { "product": "NETGEAR Nighthawk BE19000 Wi-Fi 7 Router", "regular": 599.99, "member": 549.99, "save": 50, "sku": "6554318" },
-        { "product": "Google Nest Learning Thermostat (4th gen)", "regular": 279.99, "member": 229.99, "save": 50, "sku": "6587626" },
-        { "product": "Shark Pickup 3-in-1 Steam Mop", "regular": 179.99, "member": 169.99, "save": 10, "sku": "6594062" },
-        { "product": "GE 1.1 Cu. Ft. Countertop Convection Microwave", "regular": 127.99, "member": 114.99, "save": 13, "sku": "6580727" }
+        { "product": "Tineco FloorWasher Pet5 Cordless Wet/Dry Vac", "regular": 399.99, "member": 249.99, "save": 150, "sku": "6585781" },
+        { "product": "Google Nest Learning Thermostat (4th gen)", "regular": 279.99, "member": 229.99, "save": 50, "sku": "6587695" },
+        { "product": "Shark NeverChange Air Purifier (650 sq ft)", "regular": 249.99, "member": 199.99, "save": 50, "sku": "6567890" }
       ],
-      "notDeals": "Samsung 30-in. electric range ($799.99) and Samsung over-the-range microwave ($379.99) are regular sales, not member-exclusive. NOTE: Audio & Headphones, Cameras/Drones, Cell Phones, and Health/Wearables could not be verified this run — bestbuy.com blocked product-page loads mid-run after heavy traffic, and member prices don't show on the listing pages. Smart Home was only partially covered (routers/mesh beyond the Nighthawk still need checking in the app)."
+      "notDeals": "Samsung over-the-range microwave ($379.99, $40 off) is a regular sale, not member-exclusive."
+    },
+    {
+      "name": "Smart Home & Wi-Fi",
+      "deals": [
+        { "product": "NETGEAR Nighthawk BE19000 Wi-Fi 7 Router", "regular": 599.99, "member": 549.99, "save": 50, "sku": "6554318" },
+        { "product": "eero 7 Mesh Wi-Fi 7 System (3-pack)", "regular": 349.99, "member": 279.99, "save": 70, "sku": "6612700" },
+        { "product": "NETGEAR Nighthawk BE6500 Wi-Fi 7 Router", "regular": 229.99, "member": 199.99, "save": 30, "sku": "6598712" },
+        { "product": "TP-Link Archer BE6500 Wi-Fi 7 Router", "regular": 149.99, "member": 139.99, "save": 10, "sku": "6583791" },
+        { "product": "Ring Battery Doorbell Plus", "regular": 69.99, "member": 59.99, "save": 10, "sku": "6531758" }
+      ],
+      "notDeals": "Google Nest Cam 3-pack ($449.99) is a regular sale, not member-exclusive."
+    },
+    {
+      "name": "Audio",
+      "deals": [
+        { "product": "RØDECaster Duo Integrated Audio Studio", "regular": 447.99, "member": 415.99, "save": 32, "sku": "6547073" },
+        { "product": "Logitech Z906 5.1 Surround Speaker System", "regular": 402.99, "member": 382.99, "save": 20, "sku": "4580243" }
+      ],
+      "notDeals": "Samsung Q990H Q-Series soundbar ($1,699.99, $300 off) is a regular sale, not member-exclusive."
+    },
+    {
+      "name": "Cameras & Drones",
+      "deals": [
+        { "product": "RØDE Wireless GO (Gen 3) Mic System", "regular": 153.99, "member": 142.99, "save": 11, "sku": "6610882" },
+        { "product": "GoPro Volta Battery Grip/Tripod/Remote", "regular": 134.99, "member": 124.99, "save": 10, "sku": "6504679" },
+        { "product": "DJI Osmo Mobile 7 Smartphone Gimbal", "regular": 75.00, "member": 59.00, "save": 16, "sku": "6614505" }
+      ],
+      "notDeals": "SanDisk 1TB microSDXC ($329.99) and the Insta360 GO Ultra bundle are regular sales, not member-exclusive."
+    },
+    {
+      "name": "Cell Phones",
+      "deals": [
+        { "product": "OtterBox Defender Pro XT — iPhone 16 Pro", "regular": 79.99, "member": 41.99, "save": 38, "sku": "6548611" },
+        { "product": "Polaroid Hi-Print 2x3 Pocket Printer (Gen 2)", "regular": 109.99, "member": 88.99, "save": 21, "sku": "6579838" },
+        { "product": "Lively SIM/eSIM — 3 Months Service", "regular": 60.00, "member": 20.00, "save": 40, "sku": "6617963" }
+      ],
+      "notDeals": "Most OtterBox cases on this page ($59.99–$79.99) are regular sales; verify each in the app before pitching as member-exclusive."
+    },
+    {
+      "name": "Health & Wellness",
+      "deals": [
+        { "product": "Therabody JetBoots PRO Plus Compression Boots", "regular": 1149.99, "member": 1049.99, "save": 100, "sku": "6593739" },
+        { "product": "Therabody JetBoots Prime Compression Boots", "regular": 549.99, "member": 499.99, "save": 50, "sku": "6593296" },
+        { "product": "Shark Glam Ceramic Air Styler", "regular": 449.99, "member": 349.99, "save": 100, "sku": "6643890" }
+      ],
+      "notDeals": "BedJet Climate Comfort Sleep System ($499.00) shows no member-exclusive line — regular price."
     }
   ],
   "financing": {
-    "note": "All offers below are DEFERRED interest — pitch it as “no interest IF paid in full by the end of the term,” never “no interest” flat (compliance). Interest backdates to the purchase date if it isn't paid off in time. All require the My Best Buy Credit Card, so financing doubles as a card-application driver.",
+    "note": "All offers are DEFERRED interest — pitch as “no interest IF paid in full by the end of the term,” never “no interest” flat (compliance). Interest backdates to the purchase date if not paid off in time. All require the My Best Buy Credit Card. Category terms re-verified on bestbuy.com today; thresholds and card offers reflect the most recent verified check.",
     "byCategory": [
       { "offer": "Appliances & grills", "term": "18 months", "threshold": "$599+", "expires": "" },
-      { "offer": "Home theater", "term": "24 months", "threshold": "$999+", "expires": "" },
-      { "offer": "Unlocked phones", "term": "24 months", "threshold": "$649+", "expires": "" },
-      { "offer": "Microsoft Surface laptop / Surface Pro", "term": "24 months", "threshold": "$1,499.99+", "expires": "🚩 ENDS TODAY 7/12" }
+      { "offer": "Home theater (TVs)", "term": "36 months", "threshold": "$999+", "expires": "" },
+      { "offer": "Unlocked phones", "term": "24 months", "threshold": "$649+", "expires": "" }
     ],
     "thresholdLadder": [
       { "spend": "$299+", "term": "12 months", "scope": "storewide, any department" },
       { "spend": "$599+", "term": "18 months", "scope": "appliances / grills" },
       { "spend": "$649+", "term": "24 months", "scope": "phones" },
-      { "spend": "$999+", "term": "24 months", "scope": "home theater" },
-      { "spend": "$1,499.99+", "term": "24 months", "scope": "Surface, today only" }
+      { "spend": "$999+", "term": "36 months", "scope": "home theater / TVs" }
     ],
     "cardOffers": [
-      "5% back in rewards on Best Buy purchases (10% back first 14 days on approval, or take financing instead)",
-      "6% back for Plus/Total members using the card",
-      "🚩 2x rewards on RGB TVs, TCL X11L Mini LED TVs, and select NETGEAR mesh Wi-Fi — ends 7/26"
+      "Base rewards: 5% back on Best Buy purchases (6% back for Plus/Total members); 10% back on your first day of purchases when approved for the Card",
+      "🚩 LIMITED TIME — 1.5x rewards on ALL storewide purchases (Appreciation Event) — ends 7/19/26",
+      "🚩 LIMITED TIME — 2x rewards on RGB TV purchases — ends 7/26/26",
+      "🚩 LIMITED TIME — 2x rewards on TCL X11L Series SQD-Mini LED TVs — ends 7/26/26",
+      "🚩 LIMITED TIME — 2x rewards on select NETGEAR Whole Home Mesh Wi-Fi — ends 7/26/26"
     ],
     "pitch": "Pair financing with big-ticket demos — lead with the monthly payment on major appliances, TVs, and laptops. Turn every big demo into a card app."
+  },
+  "memberPerks": {
+    "note": "For My Best Buy Plus ($29.99/yr) and Total ($199.99/yr) members. Members earn 1% back in rewards on every Best Buy purchase (6% back when paired with the My Best Buy Credit Card), plus member-only prices, extended 60-day returns/exchanges, and free 2-day shipping. Total adds Geek Squad 24/7 tech support and product protection.",
+    "limitedTime": [
+      "🚩 Appreciation Event — member-only prices + bonus rewards, exclusive to Plus/Total members — ends Sunday 7/19/26",
+      "🚩 1.5x rewards on ALL storewide purchases (members who use the My Best Buy Card) — ends 7/19/26",
+      "🚩 2x rewards on RGB TVs, TCL X11L SQD-Mini LED TVs & select NETGEAR Whole Home Mesh Wi-Fi (members who use the Card) — ends 7/26/26"
+    ],
+    "pitch": "Lead with the Appreciation Event this week — it's member-only and ends Sunday, so it's the reason to sign someone up TODAY. Then remind them members earn rewards on everything year-round and the bonus multipliers stack when they add the Card."
   }
 }
